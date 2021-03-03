@@ -53,4 +53,4 @@ Por fim, selecione Javascript.
 https://marciofrancalima.com.br/static/49eb9ac95e2dcf88be9ee48bac2e0ce8/35971/eslint-08.png
 ```
 
-For detailed explanation on how things work, check out [ESLint Instalacion](https://marciofrancalima.com.br/blog/eslint-prettier-e-editorconfig/#:~:text=Como%20instalar%20ESLint%20e%20configur%C3%A1,terminal%3A%20yarn%20eslint%20%2D%2Dinit%20).
+For detailed explanation on how things work, check out [ESLint installation](https://marciofrancalima.com.br/blog/eslint-prettier-e-editorconfig/#:~:text=Como%20instalar%20ESLint%20e%20configur%C3%A1,terminal%3A%20yarn%20eslint%20%2D%2Dinit%20).
