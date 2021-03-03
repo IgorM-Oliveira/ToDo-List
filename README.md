@@ -29,7 +29,7 @@ $ yarn add eslint -D
 $ yarn eslint --init
 
 # Escolha Para verificar a sintaxe, encontrar problemas e impor o estilo do código.
-![passo 1](https://marciofrancalima.com.br/static/20c9bab9de954b8fa4ddfe72a1b72b28/4ca44/eslint-01.png)
+![Badge](https://marciofrancalima.com.br/static/20c9bab9de954b8fa4ddfe72a1b72b28/4ca44/eslint-01.png)
 
 # Escolha Javascript modules (import/export). Lembrando que configuramos o sucrase no primeiro artigo da série.
 https://marciofrancalima.com.br/static/93850976f22ea895cf4058924f4a063c/db64a/eslint-02.png
