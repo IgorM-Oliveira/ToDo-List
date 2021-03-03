@@ -59,6 +59,10 @@ $ yarn eslint --init
 # Por fim, selecione Javascript.
 ```
 ![oitavo](https://marciofrancalima.com.br/static/49eb9ac95e2dcf88be9ee48bac2e0ce8/35971/eslint-08.png)
-
+```
+# Aposso feito isso precione "yes" e espere terminar de executar
+# Apos instalado entre o terminal do projeto e execute
+$ yarn intall
+```
 
 For detailed explanation on how things work, check out [ESLint installation](https://marciofrancalima.com.br/blog/eslint-prettier-e-editorconfig/#:~:text=Como%20instalar%20ESLint%20e%20configur%C3%A1,terminal%3A%20yarn%20eslint%20%2D%2Dinit%20).
