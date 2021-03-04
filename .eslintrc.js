@@ -1,19 +1,20 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
+    node: true,
+  },
+  parserOptions: {
+    parser: "babel-eslint",
   },
   extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
+    "@nuxtjs",
+    "prettier",
+    "prettier/vue",
+    "plugin:prettier/recommended",
+    "plugin:nuxt/recommended",
   ],
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
-  plugins: [
-    'vue',
-  ],
-  rules: {
-  },
+  plugins: ["prettier"],
+  // add your custom rules here
+  rules: {},
 };
