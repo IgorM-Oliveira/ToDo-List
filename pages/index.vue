@@ -16,8 +16,9 @@
           </form>
           <ul>
             <li
-              v-for="todo in todos"
+              v-for="todo in filteredTodos"
               :key="todo.text"
+              class="my-3"
               @click="toggleTodo(todo)"
             >
               <div>
@@ -52,6 +53,13 @@ export default {
       currentTodo: "",
     };
   },
+  computed: {
+    filteredTodos() {
+      return this.todos.filter((todo) =>
+        todo.text.toLowerCase().match(this.currentTodo.toLowerCase())
+      );
+    },
+  },
   methods: {
     addTodo() {
       this.todos.push({
@@ -59,13 +67,24 @@ export default {
         done: false,
       });
       this.currentTodo = "";
+      this.sortTodos();
     },
     toggleTodo(todo) {
       // eslint-disable-next-line no-param-reassign
       todo.done = !todo.done;
+      this.sortTodos();
     },
     delTodo(todo) {
       this.todos = this.todos.filter((el) => el.text !== todo.text);
+    },
+    sortTodos() {
+      this.todos.sort((a, b) => a.done - b.done);
+    },
+    isValidInput() {
+      return !(!this.currentTodo.thim() || this.checkIfTodoExists());
+    },
+    checkIfTodoExists() {
+      return this.todos.some((todo) => todo.text === this.currentTodo.trim());
     },
   },
 };
